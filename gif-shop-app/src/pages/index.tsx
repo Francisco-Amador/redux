@@ -1,6 +1,7 @@
 import  Head  from 'next/head';
 import SearchBar from "@/root/components/search-bar/SearchBar";
 import { GifList } from '@/root/components/gif-list/GifList';
+import CartStore from './cardStore';
 
  
 const Home = () => {
@@ -19,8 +20,9 @@ const Home = () => {
         <SearchBar />
       </div>
       <div className="flex justify-center">
-       <GifList />
+      <GifList />
       </div>
+      <CartStore></CartStore>
     </div>
     </>
   );

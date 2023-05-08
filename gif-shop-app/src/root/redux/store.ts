@@ -2,12 +2,12 @@ import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useSelector } from 'react-redux'
 
 import { gifReducer } from "./reducers/gif-reducer/gifReducer";
-//import { cartReducer } from './reducers/cart-reducer/cartReducer';
+import { cartReducer } from './reducers/cart-reducer/cartReducer';
 
 export const ApplicationStore = configureStore({
   reducer: {
     gifStore: gifReducer,
-  //  cartStore: cartReducer,
+    cartStore: cartReducer,
   }, 
 });
 

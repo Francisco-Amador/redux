@@ -17,7 +17,7 @@ try {
 			id:  gif.id,
 			title:  gif.title,
 			url:  gif.images.fixed_width.url,
-		 })
+		})
 		);
 		return  gifs;
 	} catch (error) {
