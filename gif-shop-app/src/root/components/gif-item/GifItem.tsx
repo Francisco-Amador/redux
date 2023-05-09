@@ -12,12 +12,11 @@ export interface GiftItemProps {
 }
 
 export const GifItem = ({ item }: GiftItemProps) => {
-  const listCart = useSelector(selectGifsCart);
   const dispatchCart = useDispatch();
   function handelAddCart() {
-    const cartList : Gif[] = [...listCart, item]
+    const cartList : Gif[] = [item]
 
-    dispatchCart(addItem(cartList));
+    dispatchCart(addItem(item));
     console.log(cartList.length)
   }
 

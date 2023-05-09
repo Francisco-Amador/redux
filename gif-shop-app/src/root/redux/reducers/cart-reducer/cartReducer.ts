@@ -21,9 +21,8 @@ export const Cart = createSlice({
   initialState,
 
   reducers: {
-    addItem: (state, action: PayloadAction<Gif[]>) => {
-      return { ...state, gifs: [...state.gifs, ...action.payload] };
-
+    addItem: (state, action: PayloadAction<Gif>) => {
+      return {...state, gifs: [...state.gifs, action.payload] };
       },
   },
 });

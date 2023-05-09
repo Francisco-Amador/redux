@@ -22,7 +22,6 @@ export const gifSlice = createSlice({
 
   reducers: {
     setGifs: (state, action: PayloadAction<Gif[]>) => {
-     // state.gifs = action.payload;
       return {gifs :action.payload};
     },
   },
